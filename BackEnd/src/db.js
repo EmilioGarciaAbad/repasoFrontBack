@@ -5,7 +5,7 @@ const connectdb = async() => {
         await mongoose.connect("mongodb://localhost/RecuperacionDB")
             console.log('Conexión exitosa con la base de datos')
     } catch (error) {
-        console.log(error);
+        console.log("Error al conectar con la base de datos")
     }
 }
 
